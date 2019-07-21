@@ -20,8 +20,9 @@
 		715F6A0422E4E41F0008598C /* LogDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715F6A0322E4E41F0008598C /* LogDateFormatter.swift */; };
 		715F6A0722E4E4C10008598C /* Date+LogDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715F6A0622E4E4C10008598C /* Date+LogDateFormatter.swift */; };
 		715F6A0922E4E4DA0008598C /* String+SourceFileName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715F6A0822E4E4DA0008598C /* String+SourceFileName.swift */; };
-		715F6A0B22E4F0220008598C /* CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715F6A0A22E4F0220008598C /* CoreData.swift */; };
 		715F6A1122E4FE940008598C /* CoreDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715F6A1022E4FE940008598C /* CoreDataStore.swift */; };
+		715F6A1422E5038E0008598C /* ManagedObjectConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715F6A1322E5038E0008598C /* ManagedObjectConvertible.swift */; };
+		715F6A1622E503D60008598C /* LogStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715F6A1522E503D60008598C /* LogStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,8 +53,9 @@
 		715F6A0322E4E41F0008598C /* LogDateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogDateFormatter.swift; sourceTree = "<group>"; };
 		715F6A0622E4E4C10008598C /* Date+LogDateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+LogDateFormatter.swift"; sourceTree = "<group>"; };
 		715F6A0822E4E4DA0008598C /* String+SourceFileName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+SourceFileName.swift"; sourceTree = "<group>"; };
-		715F6A0A22E4F0220008598C /* CoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreData.swift; sourceTree = "<group>"; };
 		715F6A1022E4FE940008598C /* CoreDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStore.swift; sourceTree = "<group>"; };
+		715F6A1322E5038E0008598C /* ManagedObjectConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagedObjectConvertible.swift; sourceTree = "<group>"; };
+		715F6A1522E503D60008598C /* LogStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,12 +122,12 @@
 		715F69FE22E4E2C10008598C /* Logger */ = {
 			isa = PBXGroup;
 			children = (
+				715F6A1222E503760008598C /* CoreData */,
 				715F6A0522E4E4B20008598C /* Helpers */,
 				715F69FF22E4E2DC0008598C /* Logger.swift */,
 				715F6A0122E4E4020008598C /* LogLevel.swift */,
 				715F6A0322E4E41F0008598C /* LogDateFormatter.swift */,
-				715F6A0A22E4F0220008598C /* CoreData.swift */,
-				715F6A1022E4FE940008598C /* CoreDataStore.swift */,
+				715F6A1522E503D60008598C /* LogStore.swift */,
 			);
 			path = Logger;
 			sourceTree = "<group>";
@@ -137,6 +139,15 @@
 				715F6A0822E4E4DA0008598C /* String+SourceFileName.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		715F6A1222E503760008598C /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				715F6A1022E4FE940008598C /* CoreDataStore.swift */,
+				715F6A1322E5038E0008598C /* ManagedObjectConvertible.swift */,
+			);
+			path = CoreData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,16 +251,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				715F6A1622E503D60008598C /* LogStore.swift in Sources */,
 				715F6A0022E4E2DC0008598C /* Logger.swift in Sources */,
 				715F6A0222E4E4020008598C /* LogLevel.swift in Sources */,
 				715F69DE22E4E2950008598C /* ViewController.swift in Sources */,
 				715F6A1122E4FE940008598C /* CoreDataStore.swift in Sources */,
 				715F6A0722E4E4C10008598C /* Date+LogDateFormatter.swift in Sources */,
-				715F6A0B22E4F0220008598C /* CoreData.swift in Sources */,
 				715F69DA22E4E2950008598C /* AppDelegate.swift in Sources */,
 				715F6A0422E4E41F0008598C /* LogDateFormatter.swift in Sources */,
 				715F6A0922E4E4DA0008598C /* String+SourceFileName.swift in Sources */,
 				715F69E422E4E2950008598C /* Woodpecker.xcdatamodeld in Sources */,
+				715F6A1422E5038E0008598C /* ManagedObjectConvertible.swift in Sources */,
 				715F69DC22E4E2950008598C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
