@@ -16,10 +16,12 @@ func print(_ object: Any) {
 }
 
 class Logger {
-    // 1. The date formatter
     static var isLoggingEnabled = true
-    static let appDelegate = UIApplication.shared.delegate as? AppDelegate
-    static let context = appDelegate?.persistentContainer.newBackgroundContext()
+    
+    // 1. The date formatter
+    static var logStore: LogStore = {
+        return LogStore()
+    }()
     
     class func e( _ object: Any,// 1
         filename: String = #file, // 2
@@ -73,12 +75,8 @@ class Logger {
             let message = "[\(date)]\(level.rawValue)[\(filename.sourceFileName()), line \(line)][\(funcName)] -> \(object)"
             print(message)
             
-            guard let context = context else {
-                return
-            }
-            
             let log = Log(identifier: "LogMO", level: level, message: message)
-            LogMO.insert(log, with: context)
+            logStore.insert(log)
         }
     }
 }
