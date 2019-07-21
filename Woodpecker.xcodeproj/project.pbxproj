@@ -1,0 +1,529 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		715F69DA22E4E2950008598C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715F69D922E4E2950008598C /* AppDelegate.swift */; };
+		715F69DC22E4E2950008598C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715F69DB22E4E2950008598C /* SceneDelegate.swift */; };
+		715F69DE22E4E2950008598C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715F69DD22E4E2950008598C /* ViewController.swift */; };
+		715F69E122E4E2950008598C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 715F69DF22E4E2950008598C /* Main.storyboard */; };
+		715F69E422E4E2950008598C /* Woodpecker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 715F69E222E4E2950008598C /* Woodpecker.xcdatamodeld */; };
+		715F69E622E4E2960008598C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 715F69E522E4E2960008598C /* Assets.xcassets */; };
+		715F69E922E4E2960008598C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 715F69E722E4E2960008598C /* LaunchScreen.storyboard */; };
+		715F69F422E4E2960008598C /* WoodpeckerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715F69F322E4E2960008598C /* WoodpeckerTests.swift */; };
+		715F6A0022E4E2DC0008598C /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715F69FF22E4E2DC0008598C /* Logger.swift */; };
+		715F6A0222E4E4020008598C /* LogLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715F6A0122E4E4020008598C /* LogLevel.swift */; };
+		715F6A0422E4E41F0008598C /* LogDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715F6A0322E4E41F0008598C /* LogDateFormatter.swift */; };
+		715F6A0722E4E4C10008598C /* Date+LogDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715F6A0622E4E4C10008598C /* Date+LogDateFormatter.swift */; };
+		715F6A0922E4E4DA0008598C /* String+SourceFileName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715F6A0822E4E4DA0008598C /* String+SourceFileName.swift */; };
+		715F6A0B22E4F0220008598C /* CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715F6A0A22E4F0220008598C /* CoreData.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		715F69F022E4E2960008598C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 715F69CE22E4E2950008598C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 715F69D522E4E2950008598C;
+			remoteInfo = Woodpecker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		715F69D622E4E2950008598C /* Woodpecker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Woodpecker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		715F69D922E4E2950008598C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		715F69DB22E4E2950008598C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		715F69DD22E4E2950008598C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		715F69E022E4E2950008598C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		715F69E322E4E2950008598C /* Woodpecker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Woodpecker.xcdatamodel; sourceTree = "<group>"; };
+		715F69E522E4E2960008598C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		715F69E822E4E2960008598C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		715F69EA22E4E2960008598C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		715F69EF22E4E2960008598C /* WoodpeckerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WoodpeckerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		715F69F322E4E2960008598C /* WoodpeckerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WoodpeckerTests.swift; sourceTree = "<group>"; };
+		715F69F522E4E2960008598C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		715F69FF22E4E2DC0008598C /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		715F6A0122E4E4020008598C /* LogLevel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogLevel.swift; sourceTree = "<group>"; };
+		715F6A0322E4E41F0008598C /* LogDateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogDateFormatter.swift; sourceTree = "<group>"; };
+		715F6A0622E4E4C10008598C /* Date+LogDateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+LogDateFormatter.swift"; sourceTree = "<group>"; };
+		715F6A0822E4E4DA0008598C /* String+SourceFileName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+SourceFileName.swift"; sourceTree = "<group>"; };
+		715F6A0A22E4F0220008598C /* CoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreData.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		715F69D322E4E2950008598C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		715F69EC22E4E2960008598C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		715F69CD22E4E2950008598C = {
+			isa = PBXGroup;
+			children = (
+				715F69D822E4E2950008598C /* Woodpecker */,
+				715F69F222E4E2960008598C /* WoodpeckerTests */,
+				715F69D722E4E2950008598C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		715F69D722E4E2950008598C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				715F69D622E4E2950008598C /* Woodpecker.app */,
+				715F69EF22E4E2960008598C /* WoodpeckerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		715F69D822E4E2950008598C /* Woodpecker */ = {
+			isa = PBXGroup;
+			children = (
+				715F69FE22E4E2C10008598C /* Logger */,
+				715F69D922E4E2950008598C /* AppDelegate.swift */,
+				715F69DB22E4E2950008598C /* SceneDelegate.swift */,
+				715F69DD22E4E2950008598C /* ViewController.swift */,
+				715F69DF22E4E2950008598C /* Main.storyboard */,
+				715F69E522E4E2960008598C /* Assets.xcassets */,
+				715F69E722E4E2960008598C /* LaunchScreen.storyboard */,
+				715F69EA22E4E2960008598C /* Info.plist */,
+				715F69E222E4E2950008598C /* Woodpecker.xcdatamodeld */,
+			);
+			path = Woodpecker;
+			sourceTree = "<group>";
+		};
+		715F69F222E4E2960008598C /* WoodpeckerTests */ = {
+			isa = PBXGroup;
+			children = (
+				715F69F322E4E2960008598C /* WoodpeckerTests.swift */,
+				715F69F522E4E2960008598C /* Info.plist */,
+			);
+			path = WoodpeckerTests;
+			sourceTree = "<group>";
+		};
+		715F69FE22E4E2C10008598C /* Logger */ = {
+			isa = PBXGroup;
+			children = (
+				715F6A0522E4E4B20008598C /* Helpers */,
+				715F69FF22E4E2DC0008598C /* Logger.swift */,
+				715F6A0122E4E4020008598C /* LogLevel.swift */,
+				715F6A0322E4E41F0008598C /* LogDateFormatter.swift */,
+				715F6A0A22E4F0220008598C /* CoreData.swift */,
+			);
+			path = Logger;
+			sourceTree = "<group>";
+		};
+		715F6A0522E4E4B20008598C /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				715F6A0622E4E4C10008598C /* Date+LogDateFormatter.swift */,
+				715F6A0822E4E4DA0008598C /* String+SourceFileName.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		715F69D522E4E2950008598C /* Woodpecker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 715F69F822E4E2960008598C /* Build configuration list for PBXNativeTarget "Woodpecker" */;
+			buildPhases = (
+				715F69D222E4E2950008598C /* Sources */,
+				715F69D322E4E2950008598C /* Frameworks */,
+				715F69D422E4E2950008598C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Woodpecker;
+			productName = Woodpecker;
+			productReference = 715F69D622E4E2950008598C /* Woodpecker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		715F69EE22E4E2960008598C /* WoodpeckerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 715F69FB22E4E2960008598C /* Build configuration list for PBXNativeTarget "WoodpeckerTests" */;
+			buildPhases = (
+				715F69EB22E4E2960008598C /* Sources */,
+				715F69EC22E4E2960008598C /* Frameworks */,
+				715F69ED22E4E2960008598C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				715F69F122E4E2960008598C /* PBXTargetDependency */,
+			);
+			name = WoodpeckerTests;
+			productName = WoodpeckerTests;
+			productReference = 715F69EF22E4E2960008598C /* WoodpeckerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		715F69CE22E4E2950008598C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = Aly;
+				TargetAttributes = {
+					715F69D522E4E2950008598C = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					715F69EE22E4E2960008598C = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = 715F69D522E4E2950008598C;
+					};
+				};
+			};
+			buildConfigurationList = 715F69D122E4E2950008598C /* Build configuration list for PBXProject "Woodpecker" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 715F69CD22E4E2950008598C;
+			productRefGroup = 715F69D722E4E2950008598C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				715F69D522E4E2950008598C /* Woodpecker */,
+				715F69EE22E4E2960008598C /* WoodpeckerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		715F69D422E4E2950008598C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				715F69E922E4E2960008598C /* LaunchScreen.storyboard in Resources */,
+				715F69E622E4E2960008598C /* Assets.xcassets in Resources */,
+				715F69E122E4E2950008598C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		715F69ED22E4E2960008598C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		715F69D222E4E2950008598C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				715F6A0022E4E2DC0008598C /* Logger.swift in Sources */,
+				715F6A0222E4E4020008598C /* LogLevel.swift in Sources */,
+				715F69DE22E4E2950008598C /* ViewController.swift in Sources */,
+				715F6A0722E4E4C10008598C /* Date+LogDateFormatter.swift in Sources */,
+				715F6A0B22E4F0220008598C /* CoreData.swift in Sources */,
+				715F69DA22E4E2950008598C /* AppDelegate.swift in Sources */,
+				715F6A0422E4E41F0008598C /* LogDateFormatter.swift in Sources */,
+				715F6A0922E4E4DA0008598C /* String+SourceFileName.swift in Sources */,
+				715F69E422E4E2950008598C /* Woodpecker.xcdatamodeld in Sources */,
+				715F69DC22E4E2950008598C /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		715F69EB22E4E2960008598C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				715F69F422E4E2960008598C /* WoodpeckerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		715F69F122E4E2960008598C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 715F69D522E4E2950008598C /* Woodpecker */;
+			targetProxy = 715F69F022E4E2960008598C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		715F69DF22E4E2950008598C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				715F69E022E4E2950008598C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		715F69E722E4E2960008598C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				715F69E822E4E2960008598C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		715F69F622E4E2960008598C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		715F69F722E4E2960008598C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		715F69F922E4E2960008598C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2NT5QR24SX;
+				INFOPLIST_FILE = Woodpecker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.alyyakan.Woodpecker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		715F69FA22E4E2960008598C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2NT5QR24SX;
+				INFOPLIST_FILE = Woodpecker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.alyyakan.Woodpecker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		715F69FC22E4E2960008598C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2NT5QR24SX;
+				INFOPLIST_FILE = WoodpeckerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.alyyakan.WoodpeckerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Woodpecker.app/Woodpecker";
+			};
+			name = Debug;
+		};
+		715F69FD22E4E2960008598C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2NT5QR24SX;
+				INFOPLIST_FILE = WoodpeckerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.alyyakan.WoodpeckerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Woodpecker.app/Woodpecker";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		715F69D122E4E2950008598C /* Build configuration list for PBXProject "Woodpecker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				715F69F622E4E2960008598C /* Debug */,
+				715F69F722E4E2960008598C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		715F69F822E4E2960008598C /* Build configuration list for PBXNativeTarget "Woodpecker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				715F69F922E4E2960008598C /* Debug */,
+				715F69FA22E4E2960008598C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		715F69FB22E4E2960008598C /* Build configuration list for PBXNativeTarget "WoodpeckerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				715F69FC22E4E2960008598C /* Debug */,
+				715F69FD22E4E2960008598C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		715F69E222E4E2950008598C /* Woodpecker.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				715F69E322E4E2950008598C /* Woodpecker.xcdatamodel */,
+			);
+			currentVersion = 715F69E322E4E2950008598C /* Woodpecker.xcdatamodel */;
+			path = Woodpecker.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 715F69CE22E4E2950008598C /* Project object */;
+}

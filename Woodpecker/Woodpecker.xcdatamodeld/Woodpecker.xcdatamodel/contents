@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14838.16" systemVersion="18G59b" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="NO" userDefinedModelVersionIdentifier="">
+    <entity name="LogMO" representedClassName="LogMO" syncable="YES">
+        <attribute name="level" optional="YES" attributeType="String"/>
+        <attribute name="message" optional="YES" attributeType="String"/>
+    </entity>
+    <elements>
+        <element name="LogMO" positionX="-63" positionY="-18" width="128" height="73"/>
+    </elements>
+</model>
