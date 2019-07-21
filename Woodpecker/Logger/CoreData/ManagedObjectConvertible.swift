@@ -18,10 +18,7 @@ protocol ObjectConvertible {
 /// An `NSManagedObject` that wants to be converted from an `ObjectConvertible` object should implement the `ManagedObjectConvertible` protocol.
 protocol ManagedObjectConvertible {
     /// An object which should implement the `ObjectConvertible` protocol.
-    associatedtype T
-    
-    /// A String representing a URI that provides an archiveable reference to the object in Core Data.
-    var identifier: String? { get }
+    associatedtype T: ObjectConvertible
     
     /// Insert an object in Core Data.
     ///
@@ -62,69 +59,46 @@ protocol ManagedObjectConvertible {
 }
 
 /// Basic implementation of CRUD operations.
-extension ManagedObjectConvertible where T: ObjectConvertible, Self: NSManagedObject {
-    var identifier: String? {
-        return objectID.uriRepresentation().absoluteString
-    }
-    
+/// You can have a different implementation with Self is equal to something else (eg. Saving to disk and the modelIdentifier would be a filepath).
+extension ManagedObjectConvertible where Self: NSManagedObject {
     static func insert(_ object: T, with context: NSManagedObjectContext) {
+        // Check for model name.
         guard object.modelIdentifier != nil else { return }
         
+        // Create a managed object using the context.
         let managedObject = Self(context: context)
+        
+        // Fill the data in the managed object from the given object.
         managedObject.from(object: object)
         
+        // Try to save.
         do {
             try context.save()
         } catch {
-            print("Something went wrong. \(error)")
+            print("Something went wrong while inserting an object with identifier \(object.modelIdentifier ?? ""). \(error)")
         }
-    }
-    
-    static func update(_ object: T, with context: NSManagedObjectContext) {
-        guard let managedObject = get(object: object, with: context) else {
-            return
-        }
-        
-        managedObject.from(object: object)
-        
-        try? context.save()
-    }
-    
-    static func delete(_ object: T, with context: NSManagedObjectContext) {
-        guard let managedObject = get(object: object, with: context) else {
-            return
-        }
-        
-        context.delete(managedObject)
-        
-        try? context.save()
     }
     
     static func fetchAll(from context: NSManagedObjectContext) -> [T] {
+        // Create a fetch request using a string description of the managed object's class name.
         let request = NSFetchRequest<Self>(entityName: String(describing: self))
-        request.returnsObjectsAsFaults = false
         
+        // Try to fetch managed objects.
         do {
             let managedObjects = try context.fetch(request)
+            
+            // Convert managed objects to normal objects using the ManagedObjectConvertible protocol.
             return managedObjects.map { $0.toObject() }
         } catch {
             return [T]()
         }
     }
     
-    private static func get(object: T, with context: NSManagedObjectContext) -> Self? {
-        guard
-            let identifier = object.modelIdentifier,
-            let uri = URL(string: identifier),
-            let objectID = context.persistentStoreCoordinator?.managedObjectID(forURIRepresentation: uri) else
-        {
-            return nil
-        }
-        
-        do {
-            return try context.existingObject(with: objectID) as? Self
-        } catch {
-            return nil
-        }
+    static func update(_ object: T, with context: NSManagedObjectContext) {
+        /// Empty
+    }
+    
+    static func delete(_ object: T, with context: NSManagedObjectContext) {
+        /// Empty
     }
 }

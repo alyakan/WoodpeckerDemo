@@ -16,7 +16,7 @@
 		715F69E922E4E2960008598C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 715F69E722E4E2960008598C /* LaunchScreen.storyboard */; };
 		715F69F422E4E2960008598C /* WoodpeckerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715F69F322E4E2960008598C /* WoodpeckerTests.swift */; };
 		715F6A0022E4E2DC0008598C /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715F69FF22E4E2DC0008598C /* Logger.swift */; };
-		715F6A0222E4E4020008598C /* LogLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715F6A0122E4E4020008598C /* LogLevel.swift */; };
+		715F6A0222E4E4020008598C /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715F6A0122E4E4020008598C /* Log.swift */; };
 		715F6A0422E4E41F0008598C /* LogDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715F6A0322E4E41F0008598C /* LogDateFormatter.swift */; };
 		715F6A0722E4E4C10008598C /* Date+LogDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715F6A0622E4E4C10008598C /* Date+LogDateFormatter.swift */; };
 		715F6A0922E4E4DA0008598C /* String+SourceFileName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715F6A0822E4E4DA0008598C /* String+SourceFileName.swift */; };
@@ -50,7 +50,7 @@
 		715F69F322E4E2960008598C /* WoodpeckerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WoodpeckerTests.swift; sourceTree = "<group>"; };
 		715F69F522E4E2960008598C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		715F69FF22E4E2DC0008598C /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
-		715F6A0122E4E4020008598C /* LogLevel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogLevel.swift; sourceTree = "<group>"; };
+		715F6A0122E4E4020008598C /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
 		715F6A0322E4E41F0008598C /* LogDateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogDateFormatter.swift; sourceTree = "<group>"; };
 		715F6A0622E4E4C10008598C /* Date+LogDateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+LogDateFormatter.swift"; sourceTree = "<group>"; };
 		715F6A0822E4E4DA0008598C /* String+SourceFileName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+SourceFileName.swift"; sourceTree = "<group>"; };
@@ -128,7 +128,7 @@
 				715F6A1222E503760008598C /* CoreData */,
 				715F6A0522E4E4B20008598C /* Helpers */,
 				715F69FF22E4E2DC0008598C /* Logger.swift */,
-				715F6A0122E4E4020008598C /* LogLevel.swift */,
+				715F6A0122E4E4020008598C /* Log.swift */,
 				715F6A0322E4E41F0008598C /* LogDateFormatter.swift */,
 				715F6A1522E503D60008598C /* LogStore.swift */,
 			);
@@ -257,7 +257,7 @@
 				715F6A1622E503D60008598C /* LogStore.swift in Sources */,
 				715F6A1922E519FA0008598C /* MainView.swift in Sources */,
 				715F6A0022E4E2DC0008598C /* Logger.swift in Sources */,
-				715F6A0222E4E4020008598C /* LogLevel.swift in Sources */,
+				715F6A0222E4E4020008598C /* Log.swift in Sources */,
 				715F69DE22E4E2950008598C /* ViewController.swift in Sources */,
 				715F6A1122E4FE940008598C /* CoreDataStore.swift in Sources */,
 				715F6A0722E4E4C10008598C /* Date+LogDateFormatter.swift in Sources */,
