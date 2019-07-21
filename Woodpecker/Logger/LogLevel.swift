@@ -8,6 +8,7 @@
 
 import Foundation
 import CoreData
+import SwiftUI
 
 enum LogLevel: String {
     case e = "[‼️]" // error
@@ -18,14 +19,16 @@ enum LogLevel: String {
     case s = "[🔥]" // severe
 }
 
-class Log: ObjectConvertible {
-    private(set) var identifier: String?
+class Log: ObjectConvertible, Identifiable {
+    var id: Int
+    private(set) var modelIdentifier: String?
     let level: LogLevel
     let message: String
     
-    init(identifier: String, level: LogLevel, message: String) {
+    init(id: Int, modelIdentifier: String, level: LogLevel, message: String) {
+        self.id = id
         self.level = level
-        self.identifier = identifier
+        self.modelIdentifier = modelIdentifier
         self.message = message
     }
 }
@@ -48,6 +51,6 @@ public class LogMO: NSManagedObject, ManagedObjectConvertible {
     
     func toObject() -> Log {
         let logLevel = LogLevel(rawValue: level ?? LogLevel.d.rawValue) ?? .d
-        return Log(identifier: "", level: logLevel, message: message ?? "")
+        return Log(id: Int.random(in: 0 ..< 1000), modelIdentifier: "", level: logLevel, message: message ?? "")
     }
 }

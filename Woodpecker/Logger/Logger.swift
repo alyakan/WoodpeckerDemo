@@ -65,7 +65,7 @@ class Logger {
         log(object, filename: filename, line: line, funcName: funcName, level: .s)
     }
     
-    class func log( _ object: Any,// 1
+    private class func log( _ object: Any,// 1
         filename: String = #file, // 2
         line: Int = #line, // 3
         funcName: String = #function,
@@ -75,7 +75,7 @@ class Logger {
             let message = "[\(date)]\(level.rawValue)[\(filename.sourceFileName()), line \(line)][\(funcName)] -> \(object)"
             print(message)
             
-            let log = Log(identifier: "LogMO", level: level, message: message)
+            let log = Log(id: Int.random(in: 0 ..< 1000), modelIdentifier: "LogMO", level: level, message: message)
             logStore.insert(log)
         }
     }

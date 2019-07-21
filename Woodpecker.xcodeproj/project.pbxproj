@@ -23,6 +23,7 @@
 		715F6A1122E4FE940008598C /* CoreDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715F6A1022E4FE940008598C /* CoreDataStore.swift */; };
 		715F6A1422E5038E0008598C /* ManagedObjectConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715F6A1322E5038E0008598C /* ManagedObjectConvertible.swift */; };
 		715F6A1622E503D60008598C /* LogStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715F6A1522E503D60008598C /* LogStore.swift */; };
+		715F6A1922E519FA0008598C /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715F6A1822E519FA0008598C /* MainView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		715F6A1022E4FE940008598C /* CoreDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStore.swift; sourceTree = "<group>"; };
 		715F6A1322E5038E0008598C /* ManagedObjectConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagedObjectConvertible.swift; sourceTree = "<group>"; };
 		715F6A1522E503D60008598C /* LogStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogStore.swift; sourceTree = "<group>"; };
+		715F6A1822E519FA0008598C /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				715F69E722E4E2960008598C /* LaunchScreen.storyboard */,
 				715F69EA22E4E2960008598C /* Info.plist */,
 				715F69E222E4E2950008598C /* Woodpecker.xcdatamodeld */,
+				715F6A1822E519FA0008598C /* MainView.swift */,
 			);
 			path = Woodpecker;
 			sourceTree = "<group>";
@@ -252,6 +255,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				715F6A1622E503D60008598C /* LogStore.swift in Sources */,
+				715F6A1922E519FA0008598C /* MainView.swift in Sources */,
 				715F6A0022E4E2DC0008598C /* Logger.swift in Sources */,
 				715F6A0222E4E4020008598C /* LogLevel.swift in Sources */,
 				715F69DE22E4E2950008598C /* ViewController.swift in Sources */,

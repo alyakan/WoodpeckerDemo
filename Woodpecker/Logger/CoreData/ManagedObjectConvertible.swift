@@ -12,7 +12,7 @@ import CoreData
 /// An object that wants to be convertible in a managed object should implement the `ObjectConvertible` protocol.
 protocol ObjectConvertible {
     /// An identifier that is used to fetch the corresponding database object.
-    var identifier: String? { get }
+    var modelIdentifier: String? { get }
 }
 
 /// An `NSManagedObject` that wants to be converted from an `ObjectConvertible` object should implement the `ManagedObjectConvertible` protocol.
@@ -68,7 +68,7 @@ extension ManagedObjectConvertible where T: ObjectConvertible, Self: NSManagedOb
     }
     
     static func insert(_ object: T, with context: NSManagedObjectContext) {
-        guard object.identifier != nil else { return }
+        guard object.modelIdentifier != nil else { return }
         
         let managedObject = Self(context: context)
         managedObject.from(object: object)
@@ -114,7 +114,7 @@ extension ManagedObjectConvertible where T: ObjectConvertible, Self: NSManagedOb
     
     private static func get(object: T, with context: NSManagedObjectContext) -> Self? {
         guard
-            let identifier = object.identifier,
+            let identifier = object.modelIdentifier,
             let uri = URL(string: identifier),
             let objectID = context.persistentStoreCoordinator?.managedObjectID(forURIRepresentation: uri) else
         {
